@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import Layout from '../components/Layout';
 
-const PostLink = (props) => (
+const PostLink = ({ id, title }) => (
   <li>
-    <Link href={`/post?title=${props.title}`}>
-      <a>{props.title}</a>
+    <Link as={`/p/${id}`} href={`/post?title=${title}`}>
+      <a>{title}</a>
     </Link>
   </li>
 );
@@ -13,9 +13,9 @@ export default () => (
   <Layout>
     <h1>My Blog</h1>
     <ul>
-      <PostLink title="Hello Next.js"/>
-      <PostLink title="Learn Next.js is awesome"/>
-      <PostLink title="Deploy apps with Zeit"/>
+      <PostLink id="hello-nextjs" title="Hello Next.js"/>
+      <PostLink id="learn-nextjs" title="Learn Next.js is awesome"/>
+      <PostLink id="deploy-nextjs" title="Deploy apps with Zeit"/>
     </ul>
   </Layout>
 );
