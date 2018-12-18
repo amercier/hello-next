@@ -19,11 +19,12 @@ app.prepare()
       return handle(request, response)
     });
 
-    server.listen(3000, error => {
+    const port = process.env.PORT || 8000;
+    server.listen(port, error => {
       if (error) {
         throw error;
       }
-      console.log('> Ready on http://localhost:3000');
+      console.log(`> Ready on http://localhost:${port}`);
     });
   })
   .catch(error => {
