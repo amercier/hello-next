@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 
 const ShowLink = ({ show }) => (
   <li>
-    <Link as={`/p/${show.id}`} href={`/post?id=${show.id}`}>
+    <Link as={`${BASE_URL}/p/${show.id}`} href={`/post?id=${show.id}`}>
       <a>{show.name}</a>
     </Link>
     <style jsx>{`
