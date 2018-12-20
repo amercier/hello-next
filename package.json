@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "node .",
     "build": "next build",
-    "export": "next export -o dist/"
+    "export": "next export -o dist/",
+    "now-build": "npm run build && npm run export"
   },
   "dependencies": {
     "express": "^4.16.4",
