@@ -6,10 +6,10 @@ const linkStyle = {
 
 const Header = () => (
     <div>
-        <Link href="/">
+        <Link as={`${BASE_URL}/`} href="/">
           <a style={linkStyle}>Home</a>
         </Link>
-        <Link href="/about">
+        <Link as={`${BASE_URL}/about`} href="/about">
           <a style={linkStyle}>About</a>
         </Link>
     </div>
