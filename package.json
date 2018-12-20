@@ -1,13 +1,12 @@
 {
   "name": "hello-next",
   "private": true,
-  "main": "server.js",
+  "main": "development-server.js",
   "scripts": {
     "dev": "node .",
     "build": "next build",
     "export": "next export -o dist/",
-    "postexport": "cpy public/* dist/",
-    "start": "NODE_ENV=production node ."
+    "postexport": "cpy public/* dist/"
   },
   "dependencies": {
     "cpy-cli": "^2.0.0",
