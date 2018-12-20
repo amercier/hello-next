@@ -2,11 +2,11 @@
   "name": "hello-next",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "dev": "node server.js",
+    "dev": "node .",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js"
+    "start": "NODE_ENV=production node ."
   },
   "keywords": [],
   "author": "",
