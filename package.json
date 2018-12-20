@@ -1,12 +1,11 @@
 {
   "name": "hello-next",
   "private": true,
-  "main": "server.js",
+  "main": "development-server.js",
   "scripts": {
     "dev": "node .",
     "build": "next build",
-    "export": "next export -o dist/",
-    "start": "NODE_ENV=production node ."
+    "export": "next export -o dist/"
   },
   "dependencies": {
     "express": "^4.16.4",
