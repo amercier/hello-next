@@ -1,16 +1,12 @@
 {
   "name": "hello-next",
-  "version": "1.0.0",
-  "description": "",
+  "private": true,
   "main": "server.js",
   "scripts": {
     "dev": "node .",
     "build": "next build",
     "start": "NODE_ENV=production node ."
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
     "isomorphic-unfetch": "^3.0.0",
