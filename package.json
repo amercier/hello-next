@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "node .",
     "build": "next build",
-    "start": "NODE_ENV=production node ."
+    "start": "NODE_ENV=production node .",
+    "heroku-postbuild": "npm run build"
   },
   "keywords": [],
   "author": "",
