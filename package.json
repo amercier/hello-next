@@ -8,7 +8,7 @@
     "export": "next export -o dist/",
     "postexport": "cpy public/* dist/"
   },
-  "dependencies": {
+  "devDependencies": {
     "cpy-cli": "^2.0.0",
     "express": "^4.16.4",
     "isomorphic-unfetch": "^3.0.0",
