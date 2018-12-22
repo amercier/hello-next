@@ -8,6 +8,7 @@ const handle = app.getRequestHandler();
 app.prepare()
   .then(() => {
     const server = express();
+    server.use(express.static('public'));
 
     server.get('/p/:id', (request, response) => {
       const actualPage = '/post';
